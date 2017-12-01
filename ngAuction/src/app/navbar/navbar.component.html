@@ -1,3 +1,28 @@
+<!--new Styling with Angular Material-->
+
+<mat-toolbar color="primary">
+  <a [routerLink]="['/']">Online Auction</a>
+  <div class="fill"></div>
+  <button mat-icon-button [matMenuTriggerFor]="menu" >
+    <mat-icon>more_vert</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon>info</mat-icon>
+    <span>About</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>settings</mat-icon>
+    <span>Services</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>contacts</mat-icon>
+    <span>Contact</span>
+  </button>
+</mat-menu>
+<!--old UI with BootStrap -->
+<!--
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -18,3 +43,4 @@
       </ul> </div>
   </div>
 </nav>
+-->
